@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Mulish, Montserrat, Roboto, cursive;
+}
+
+body {
+  background-color: floralwhite;
+}
+
+button {
+  width: 10.5rem;
+  border: none;
+  border-radius: 3.43rem;
+  height: 3rem;
+  background-color: #458ffb;
+  color: white;
+}
+
+p {
+  color: #7D7987;
+}
+
+.container-position {
+  width: 90%;
+  margin: auto;
+}
+.container-position header {
+  width: 100%;
+}
+.container-position header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  justify-content: space-between;
+}
+.container-position header nav .logo-princ {
+  display: flex;
+  width: 10rem;
+  align-items: center;
+}
+.container-position header nav .logo-princ .logo-input {
+  width: 2.56rem;
+  height: 2.56rem;
+  border-radius: 50%;
+  background-color: #458ffb;
+  position: relative;
+}
+.container-position header nav .logo-princ .logo-input h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.container-position header nav .logo-princ h2 {
+  margin-left: 0.75rem;
+  font-size: 1.5rem;
+}
+.container-position header nav .navegation {
+  display: none;
+}
+.container-position section {
+  text-align: center;
+}
+.container-position section .banner {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+  grid-template-rows: auto auto;
+}
+.container-position section .banner .text-banner {
+  width: auto;
+}
+.container-position section .banner .text-banner h1 {
+  font-size: 2rem;
+}
+.container-position section .banner .text-banner p {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.container-position section .banner .image-banner {
+  display: none;
+}
+.container-position section.section-service {
+  margin-top: 2rem;
+  position: relative;
+  height: 120rem;
+}
+.container-position section.section-service .text-section {
+  margin-bottom: 4rem;
+}
+.container-position section.section-service .text-section h1:after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 0.125rem;
+  background-color: black;
+  margin: 1rem auto;
+}
+.container-position section.section-service .text-section p {
+  text-align: justify;
+}
+.container-position section.section-service .service-princ {
+  display: grid;
+  gap: 2.125rem;
+  height: 60rem;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-columns: auto;
+}
+.container-position section.section-service .service-princ .card-service {
+  width: 100%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.171);
+  height: 15rem;
+}
+.container-position section.section-service .service-princ .card-service img {
+  margin-top: 2rem;
+}
+.container-position section.section-service .service-princ .card-service h2 {
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+}
+.container-position section.section-service button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: transparent;
+  border: 1.4px solid #458ffb;
+  color: #458ffb;
+  font-weight: 700;
+  transform: translateX(-50%);
+}
+.container-position section {
+  margin-top: 1rem;
+}
+.container-position section .curiosidade img {
+  width: 300px;
+  margin-top: 2rem;
+}
+.container-position section .text-curiosidade h1 {
+  margin-top: 1rem;
+}
+.container-position section .text-curiosidade p {
+  margin: 1rem 0;
+  text-align: justify;
+}
+.container-position section .text-curiosidade button {
+  margin: 1rem 0;
+}
+.container-position section .testimonials {
+  width: 100%;
+  height: 16rem;
+}
+.container-position section .testimonials .swiper-slide {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+  border-radius: 1.5rem;
+}
+.container-position section .testimonials .swiper-slide p {
+  color: white;
+  text-align: center;
+}
+.container-position section .testimonials address {
+  font-style: normal;
+  margin-top: 2rem;
+  margin-bottom: -1.3rem;
+}
+.container-position section .testimonials address p {
+  width: 90%;
+  text-align: justify;
+  font-size: 1.1rem;
+  margin: auto;
+}
+.container-position section .text-section {
+  text-align: left;
+}
+.container-position section .text-section h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+.container-position section .text-section h1:after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 0.125rem;
+  background-color: black;
+  margin: 1rem auto;
+}
+.container-position section .text-section .card-princ {
+  display: grid;
+  gap: 2.3rem;
+}
+.container-position section .text-section .card-princ .card-new {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  height: 30rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.171);
+}
+.container-position section .text-section .card-princ .card-new strong p {
+  margin: 1rem 2rem;
+  font-size: 1.2rem;
+  color: black;
+}
+.container-position section .text-section .card-princ .card-new p {
+  margin: 0 2rem;
+}
+.container-position section .text-section .card-princ .card-new .link {
+  display: flex;
+  align-items: center;
+  margin: 1.56rem 2rem;
+  width: 100%;
+}
+.container-position section .text-section .card-princ .card-new .link a {
+  display: block;
+  text-decoration: none;
+  margin-right: 0.3rem;
+  color: #458ffb;
+  font-weight: 700;
+}
+.container-position section .text-section .card-princ .card-new .link i {
+  color: #458ffb;
+}
+.container-position section .text-section .card-princ button {
+  margin: auto;
+  background-color: transparent;
+  border: 1.4px solid #458ffb;
+  color: #458ffb;
+  font-weight: 700;
+}
+.container footer {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  background-color: #458ffb;
+  margin-top: 3rem;
+}
+.container footer .footer .logo-princ {
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+  width: 10rem;
+  align-items: center;
+}
+.container footer .footer .logo-princ .logo-input {
+  width: 2.56rem;
+  height: 2.56rem;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+}
+.container footer .footer .logo-princ .logo-input h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #458ffb;
+  font-size: 1.62rem;
+}
+.container footer .footer .logo-princ h2 {
+  margin-left: 0.75rem;
+  color: white;
+  font-size: 1.5rem;
+}
+.container footer .footer-text {
+  width: 21.43rem;
+  margin: auto;
+}
+.container footer .footer-text p {
+  text-align: left;
+  margin: 2rem 0;
+  color: white;
+}
+.container footer .footer-title {
+  text-align: center;
+  margin: 1rem 0;
+}
+.container footer .footer-title ul {
+  list-style: none;
+}
+.container footer .footer-title ul li {
+  margin: 0.4rem 0;
+  color: white;
+  font-weight: lighter;
+}
+.container footer .footer-title p {
+  margin: 1rem 0;
+  color: white;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=estilo.css.map */
