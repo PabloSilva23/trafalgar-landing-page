@@ -57,16 +57,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
  
    <h3 align="center">Mobile 📱</h3>
  <div align="center">
-   <img src="https://user-images.githubusercontent.com/87915108/156865723-4cd7262e-d5c5-4d9b-b8a8-d4a14c86f0e9.png" width="200px"></img>
+   <img src="https://user-images.githubusercontent.com/87915108/158065945-eda31f88-79ad-4b5e-8ebd-a02693e043c8.png" width="200px"></img>
  </div>
  <h3 align='center'>Tablet 💻</h3>
    <div align="center">
-   <img src="https://user-images.githubusercontent.com/87915108/156896605-7d489b4b-2981-49aa-936d-63a3a87533ea.png" width="600px"></img>
+   <img src="https://user-images.githubusercontent.com/87915108/158065943-ea29e32b-dfd5-41f5-9148-1ce0f4e36990.png" width="600px"></img>
   </div>
 
    <h3 align='center'>Notebook 💻</h3>
    <div align="center">
-   <img src="https://user-images.githubusercontent.com/87915108/156865732-78fbd6e8-3415-4ac7-88a0-52c14410868e.png" width="600px"></img>
+   <img src="https://user-images.githubusercontent.com/87915108/158065938-699afd4c-2caa-4e24-aca5-a48b0e53dca3.png" width="600px"></img>
   </div>
 
 </details>
