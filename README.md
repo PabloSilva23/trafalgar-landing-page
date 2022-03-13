@@ -11,7 +11,7 @@
 
 <br>
 
-![payna](https://user-images.githubusercontent.com/87915108/156865677-0b1df4a8-9237-422e-8a29-eee17be38f91.gif)
+![trafalga](https://user-images.githubusercontent.com/87915108/158066969-886297b1-e4f9-42a5-baaa-7371bfd61256.gif)
 
 <h1 id="sobre">Sobre 📖</h1>
 
