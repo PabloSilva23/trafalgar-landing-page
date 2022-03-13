@@ -80,10 +80,9 @@ p {
   font-size: 2rem;
 }
 .container-position section .banner .text-banner p {
-  font-size: 1rem;
   margin: 1rem 0;
 }
-.container-position section .banner .image-banner {
+.container-position section .banner .image-banner img {
   display: none;
 }
 .container-position section.section-service {
@@ -113,8 +112,9 @@ p {
   grid-template-columns: auto;
 }
 .container-position section.section-service .service-princ .card-service {
-  width: 100%;
+  margin: auto;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.171);
+  width: 21.87rem;
   height: 15rem;
 }
 .container-position section.section-service .service-princ .card-service img {
@@ -137,7 +137,7 @@ p {
 .container-position section {
   margin-top: 1rem;
 }
-.container-position section .curiosidade img {
+.container-position section .curiosidade-princ img {
   width: 300px;
   margin-top: 2rem;
 }
@@ -155,24 +155,27 @@ p {
   width: 100%;
   height: 16rem;
 }
-.container-position section .testimonials .swiper-slide {
+.container-position section .testimonials .testimonial-slide .swiper-slide {
   width: 100%;
   height: 100%;
   background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
   border-radius: 1.5rem;
 }
-.container-position section .testimonials .swiper-slide p {
+.container-position section .testimonials .testimonial-slide .swiper-slide p {
   color: white;
   text-align: center;
 }
-.container-position section .testimonials address {
+.container-position section .testimonials .testimonial-slide .swiper-slide address {
   font-style: normal;
   margin-top: 2rem;
   margin-bottom: -1.3rem;
 }
-.container-position section .testimonials address p {
+.container-position section .testimonials .testimonial-slide .swiper-slide address .image-input {
+  display: none;
+}
+.container-position section .testimonials .testimonial-slide .swiper-slide address p {
   width: 90%;
-  text-align: justify;
+  text-align: center;
   font-size: 1.1rem;
   margin: auto;
 }
@@ -199,6 +202,9 @@ p {
   border-radius: 1.5rem;
   overflow: hidden;
   height: 30rem;
+  width: 66%;
+  width: 21.87rem;
+  margin: auto;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.171);
 }
 .container-position section .text-section .card-princ .card-new strong p {
@@ -233,8 +239,8 @@ p {
   font-weight: 700;
 }
 .container footer {
-  display: grid;
-  grid-template-rows: auto auto auto;
+  display: flex;
+  flex-direction: column;
   background-color: #458ffb;
   margin-top: 3rem;
 }
@@ -266,7 +272,7 @@ p {
   font-size: 1.5rem;
 }
 .container footer .footer-text {
-  width: 21.43rem;
+  width: 90%;
   margin: auto;
 }
 .container footer .footer-text p {
@@ -282,14 +288,174 @@ p {
   list-style: none;
 }
 .container footer .footer-title ul li {
+  font-size: 0.8rem;
   margin: 0.4rem 0;
   color: white;
-  font-weight: lighter;
+  cursor: pointer;
 }
 .container footer .footer-title p {
   margin: 1rem 0;
   color: white;
   font-weight: bold;
+}
+.container footer .footer-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 700px) {
+  .container-position section .banner {
+    grid-template-columns: auto auto;
+    align-items: center;
+    width: 100%;
+  }
+  .container-position section .banner .text-banner {
+    text-align: left;
+  }
+  .container-position section .banner .text-banner h1 {
+    font-size: 2.5rem;
+  }
+  .container-position section .banner .text-banner p {
+    margin-bottom: 2.81rem;
+  }
+  .container-position section .banner .image-banner img {
+    display: block;
+    width: 20.31rem;
+  }
+  .container-position section .curiosidade-princ img {
+    width: 30rem;
+  }
+  .container-position section .testimonials .testimonial-slide .swiper-slide address {
+    display: flex;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-position section .testimonials .testimonial-slide .swiper-slide address .image-input {
+    display: block;
+  }
+  .container-position section .testimonials .testimonial-slide .swiper-slide address .image-input img {
+    width: 4rem;
+    border-radius: 50%;
+  }
+  .container-position section .testimonials .testimonial-slide .swiper-slide address .text-address {
+    width: 11rem;
+  }
+  .container footer .footer .logo-princ {
+    margin-left: 2rem;
+  }
+  .container footer .footer .logo-princ .logo-input {
+    width: 2.56rem;
+    height: 2.56rem;
+    border-radius: 50%;
+  }
+  .container footer .footer-links .footer-title ul li {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .container-position {
+    width: 80%;
+  }
+  .container-position header nav .nav-bar {
+    display: none;
+  }
+  .container-position header nav .navegation {
+    display: block;
+  }
+  .container-position header nav .navegation ul {
+    display: flex;
+    list-style: none;
+  }
+  .container-position header nav .navegation ul li {
+    margin: 0 1rem;
+    color: #7D7987;
+    font-size: 1.125rem;
+  }
+  .container-position section .banner {
+    justify-content: space-around;
+    margin: auto;
+  }
+  .container-position section .banner .text-banner {
+    width: 24rem;
+  }
+  .container-position section .banner .image-banner img {
+    width: 30rem;
+  }
+  .container-position section.section-service {
+    text-align: left;
+    height: 64rem;
+  }
+  .container-position section.section-service .service-princ {
+    height: 35rem;
+    gap: 2rem;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+  }
+  .container-position section.section-service .service-princ .card-service {
+    padding: 0 2rem;
+    width: 19.87rem;
+    height: 21.125rem;
+  }
+  .container-position section.section-service .service-princ .card-service img {
+    margin-top: 3.37rem;
+  }
+  .container-position section.section-service .service-princ .card-service h2 {
+    margin-top: 1.4rem;
+  }
+  .container-position section.section-service .service-princ .card-service p {
+    width: 16.62rem;
+  }
+  .container-position section .curiosidade-princ .curiosidade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .container-position section .curiosidade-princ .curiosidade .text-curiosidade {
+    margin: 5rem 0;
+    width: 24rem;
+  }
+  .container-position section .curiosidade-princ .curiosidade .text-curiosidade h1 {
+    font-size: 2.5rem;
+  }
+  .container-position section .curiosidade-princ .curiosidade .text-curiosidade p {
+    line-height: 1.87rem;
+  }
+  .container-position section .curiosidade-princ .curiosidade img {
+    width: 35rem;
+  }
+  .container-position section .testimonials.swiper {
+    height: 17.56rem;
+    width: 100%;
+  }
+  .container-position section .testimonials.swiper .testimonial-slide .swiper-slide address {
+    margin-top: 3rem;
+  }
+  .container-position section .text-section .card-princ {
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    margin: auto;
+  }
+  .container-position section .text-section .card-princ .card-new {
+    width: 21rem;
+    height: 30rem;
+  }
+  .container-position section .text-section .card-princ button {
+    margin: auto;
+    margin-top: 3rem;
+    background-color: transparent;
+    border: 1px solid #458ffb;
+    color: #458ffb;
+  }
+
+  footer#footer {
+    flex-direction: row;
+  }
+  footer#footer .footer-links {
+    width: 55%;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

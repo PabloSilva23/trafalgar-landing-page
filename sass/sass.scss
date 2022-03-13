@@ -82,12 +82,13 @@ p {
                         font-size: 2rem;
                     }
                     p {
-                        font-size: 1rem;
                         margin: 1rem 0;
                     }
                 }
                 .image-banner {
-                    display: none;
+                    img {
+                        display: none;
+                    }
                 }
             }
         }
@@ -116,8 +117,9 @@ p {
                 grid-template-rows: auto auto auto auto auto auto;
                 grid-template-columns: auto;
                 .card-service {
-                    width: 100%;
+                    margin: auto;
                     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.171);
+                    width: 21.87rem;
                     height: 15rem;
                     img {
                         margin-top: 2rem;
@@ -141,7 +143,7 @@ p {
         }
         section {
             margin-top: 1rem;
-            .curiosidade {
+            .curiosidade-princ {
                 img {
                     width: 300px;
                     margin-top: 2rem;
@@ -164,25 +166,30 @@ p {
             .testimonials {
                 width: 100%;
                 height: 16rem;
-                .swiper-slide {
-                    width: 100%;
-                    height: 100%;
-                    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
-                    border-radius: 1.5rem;
-                    p {
-                        color: white;
-                        text-align: center;
-                    }
-                }
-                address {
-                    font-style: normal;
-                    margin-top: 2rem;
-                    margin-bottom: -1.3rem;
-                    p {
-                        width: 90%;
-                        text-align: justify;
-                        font-size: 1.1rem;
-                        margin: auto;
+                    .testimonial-slide {
+                        .swiper-slide {
+                            width: 100%;
+                            height: 100%;
+                            background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+                            border-radius: 1.5rem;
+                            p {
+                                color: white;
+                                text-align: center;
+                            }
+                            address {
+                            font-style: normal;
+                            margin-top: 2rem;
+                            margin-bottom: -1.3rem;
+                            .image-input {
+                                display: none;
+                            }
+                            p {
+                                width: 90%;
+                                text-align: center;
+                                font-size: 1.1rem;
+                                margin: auto;
+                            }
+                        }
                     }
                 }
             }
@@ -209,6 +216,8 @@ p {
                             border-radius: 1.5rem;
                             overflow: hidden;
                             height: 30rem;
+                            width: 66%;                    width: 21.87rem;
+                            margin: auto;
                             box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.171);
                             strong {
                                 p {
@@ -249,8 +258,8 @@ p {
         }
     }
     footer {
-        display: grid;
-        grid-template-rows: auto auto auto;
+        display: flex;
+        flex-direction: column;
         background-color: $cor-principal;
         margin-top: 3rem;
         .footer {
@@ -280,7 +289,7 @@ p {
             }
             
             &-text {
-                width: 21.43rem;
+                width: 90%;
                 margin: auto;
                 p {
                     text-align: left;
@@ -295,9 +304,10 @@ p {
             ul {
                 list-style: none;
                 li {
+                    font-size: .8rem;
                     margin: .4rem 0;
                     color: white;
-                    font-weight: lighter
+                    cursor: pointer;
                 };
             }
             p {
@@ -306,6 +316,222 @@ p {
                 font-weight: bold;
             }
         }
+        .footer-links {
+            display: flex;
+            justify-content: space-evenly;
+        }
         
     }
 };
+
+@media screen and (min-width:700px) {
+    .container {
+        &-position {
+            section {
+                .banner {
+                    grid-template-columns: auto auto;
+                    align-items: center;
+                    width: 100%;
+                    .text-banner {
+                        text-align: left;
+                        h1 {
+                            font-size: 2.5rem;
+                        }
+                        p {
+                            margin-bottom: 2.81rem;
+                        }
+                    }
+                    .image-banner {
+                        img {
+                            display: block;
+                            width: 20.31rem;
+                        }
+                    }
+                }
+            }
+            section {
+                .curiosidade-princ {
+                    img {
+                        width: 30rem;
+                    }
+                }
+            }
+            section {
+                .testimonials {
+                    .testimonial-slide {
+                        .swiper-slide {
+                            address {
+                                display: flex;
+                                margin-bottom: 0;
+                                justify-content: center;
+                                align-items: center;
+                                .image-input {
+                                    display: block;
+                                    img {
+                                        width: 4rem;
+                                        border-radius: 50%;
+                                    }
+                                }
+                                .text-address {
+                                    width: 11rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            .footer {
+                .logo-princ {
+                    margin-left: 2rem;
+                    .logo-input {
+                        width: 2.56rem;
+                        height: 2.56rem;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .footer-links {
+                .footer-title {
+                    ul {
+                        li {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        &-position {
+            width: 80%;
+            header {
+                nav {
+                    .nav-bar {
+                        display: none;
+                    }
+                    .navegation {
+                        display: block;
+                        ul {
+                            display: flex;
+                            list-style: none;
+                            li {
+                                margin: 0 1rem;
+                                color: $cor-text-p;
+                                font-size: 1.125rem;
+                            }
+                        }
+                    }
+                }
+            }
+            section {
+                .banner {
+                    justify-content: space-around;
+                    margin: auto;
+                    .text-banner {
+                        width: 24rem;
+                    }
+                    .image-banner {
+                        img {
+                            width: 30rem;
+                        }
+                    }
+                }
+            }
+            section.section-service {
+                text-align: left;
+                height: 64rem;
+                .service-princ {
+                    height: 35rem;
+                    gap: 2rem;
+                    width: 100%;
+                    grid-template-columns: auto auto auto;
+                    grid-template-rows: auto auto;
+                    .card-service {
+                        padding: 0 2rem;
+                        width: 19.87rem;
+                        height: 21.125rem;
+                        img {
+                            margin-top: 3.37rem;
+                        }
+                        h2 {
+                            margin-top: 1.4rem;
+                        }
+                        p {
+                            width: 16.62rem;
+                        }
+                    }
+                }
+            }
+            section {
+                .curiosidade-princ {
+                    .curiosidade {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        text-align: left;
+                        .text-curiosidade {
+                            margin: 5rem 0;
+                            width: 24rem;
+                            h1 {
+                                // width: 20rem;
+                                font-size: 2.5rem;
+                            }
+                            p {
+                                line-height: 1.87rem;
+                            }
+                        }
+                        img {
+                            width: 35rem;
+                        }
+                    }
+                }
+            }
+
+            section {
+                .testimonials.swiper {
+                    height: 17.56rem;
+                    width: 100%;
+                    .testimonial-slide {
+                        .swiper-slide {
+                            address {
+                                margin-top: 3rem;
+                            }
+                        }
+                    }
+                }
+            }
+            section {
+                .text-section {
+                    .card-princ {
+                        grid-template-columns: auto auto auto;
+                        gap: 1rem;
+                        margin: auto;
+                        .card-new {
+                            width: 21rem;
+                            height: 30rem;
+                        }
+                        button {
+                        margin: auto;
+                        margin-top: 3rem;
+                        background-color: transparent
+                        ;
+                        border: 1px solid $cor-principal;
+                        color: $cor-principal;
+                        }
+                    }   
+                }
+            }
+        }
+    }
+    footer#footer {
+        flex-direction: row;
+        .footer-links {
+            width: 55%;
+        }
+    }
+}
