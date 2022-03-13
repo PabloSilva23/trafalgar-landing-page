@@ -19,7 +19,7 @@
 
 Trafalga é uma landing page com foco em saúde para pessoas que buscam cuidado pessoal.
 
-Para ver o projeto [clique aqui](https://xenodochial-colden-86e154.netlify.app/).
+Para ver o projeto [clique aqui](https://pablosilva23.github.io/trafalgar-landing-page/).
 
 ### Objetivo 🎯
 
@@ -27,8 +27,10 @@ Práticar os principais recursos de HTML, CSS e Javascript. Entre eles:
 
 - Responsividade.
 - Mobile first.
+- Mixins.
 - Flexbox.
 - Grid.
+- Carrossel testimonials.
 
 <h2 id="tecnologias">Tecnologias 👨‍💻</h2>
 
@@ -36,11 +38,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 * **HTML5**.
 * **CSS3**.
+* **SASS**
 
 ### Bibliotecas 📚
 
 * [Google Fonts](https://fonts.google.com/)
 * [Fontawesome](https://fontawesome.com/v5/search)
+* [Swiperjs](https://swiperjs.com/)
 
 <h2 id="funcionalidades">Funcionalidade 🛠️</h2>
 
